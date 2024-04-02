@@ -20,7 +20,8 @@
         }
 
         public function setDirector() {
-            return $this->nome . ' ' . $this->cognome . ' ' . $this->nazionalita;
+            return '<p class=\'card-text m-0\'> <span class=\'fw-bold pe-1\'> Regista: </span>' . $this->nome . ' ' . $this->cognome . '</p> 
+                    <p class=\'card-text m-0\'> <span class=\'fw-bold pe-1\'> Nazionalità: </span>' . $this->nazionalita . '</p>';
         }
     };
 
