@@ -27,7 +27,7 @@
                     echo $genere . " ";
                 }
 
-                echo $movie->vietato_ai_minori?->setProhibited() . "
+                echo $movie->director->setDirector() . " " . $movie->vietato_ai_minori?->setProhibited() . "
             </li>";
 
         }
