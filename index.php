@@ -16,10 +16,15 @@
             $this->durata = $_durata;
             $this->anno_di_uscita =  $_anno_di_uscita;
         }
-    } 
+    }; 
 
     $movie1 = new Movie("The Beautiful Game", "2 ore", "2024");
-    var_dump($movie1);
+    $movie2 = new Movie("Povere creature!", "2 ore", "2024");
+
+    $movies = [
+        $movie1,
+        $movie2
+    ];
 
 ?>
 
@@ -32,7 +37,20 @@
 </head>
 <body>
     
+    <h1>Film</h1>
 
+    <ul>
+        <?php
+        foreach($movies as $movie) {
+
+            echo "
+            <li>
+                ". $movie->titolo . ", " . $movie->durata . ", " . $movie->anno_di_uscita . "
+            </li>";
+
+        }
+        ?>
+    </ul>
 
 </body>
 </html>
